@@ -11,7 +11,9 @@ chmod +x installer
 ./installer --mode unattended --prefix $TI_MSPGCC_DIR
 
 echo "export PATH=$TI_MSPGCC_DIR/bin:$PATH" >> /etc/profile
+echo "MSPGCC_ROOT=$TI_MSPGCC_DIR" >> /etc/profile
 
 sudo apt-get -y update
 sudo apt-get -y install default-jdk
 sudo apt-get -y install default-jre
+
