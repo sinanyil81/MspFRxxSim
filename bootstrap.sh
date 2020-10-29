@@ -12,7 +12,6 @@ chmod +x installer
 
 echo "export PATH=$TI_MSPGCC_DIR/bin:$PATH" >> /etc/profile
 
-apt-get update
-
-sudo apt install default-jdk
-sudo apt install default-jre
+sudo apt-get -y update
+sudo apt-get -y install default-jdk
+sudo apt-get -y install default-jre
