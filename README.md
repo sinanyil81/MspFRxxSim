@@ -1,6 +1,8 @@
-# Vagrant Environment for Simulating MSPFRXXXX
+# Vagrant Environment for Simulating MSPFRXX
 
-This repo contains a Vagrant virtual machine environment to run [SIREN - Batteryless Simulator](https://github.com/PERSISTLab/BatterylessSim), which is a simulator for modern, FRAM enabled MSP430s with voltage traces, IV surfaces (for energy harvesting), and with common hardware components like TARDIS / CusTARD and the CC1101.
+This repo contains a Vagrant virtual machine environment to run [SIREN - Batteryless Simulator](https://github.com/PERSISTLab/BatterylessSim). 
+
+SIREN is a simulator for modern, FRAM enabled MSP430s with voltage traces, IV surfaces (for energy harvesting), and with common hardware components like TARDIS / CusTARD and the CC1101.
 
 ## Getting Started
 
