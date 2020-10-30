@@ -1,14 +1,17 @@
 # Vagrant Environment for Simulating MSPFRXX
 
-This repo contains a Vagrant virtual machine environment to run [SIREN - Batteryless Simulator](https://github.com/PERSISTLab/BatterylessSim), which is a simulator for FRAM enabled MSP430s.
+This repo contains a Vagrant virtual machine environment to compile C code for MSP430 target. The virtual machine comes with:
+- [TI GCC 9.2.0.0 for MSP430](http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/9_2_0_0/export/msp430-gcc-full-linux-x64-installer-9.2.0.0.run)
+- [SIREN - Batteryless Simulator](https://github.com/PERSISTLab/BatterylessSim), which is a simulator for FRAM enabled MSP430s.
 
-## Getting Started
+## Installation steps
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- Install [Vagrant](https://www.vagrantup.com/) environment. 
+- Clone this repository:
 
-### Prerequisities
+		git clone https://github.com/sinanyil81/mspsim-vagrant.git
 
-Install [Vagrant](https://www.vagrantup.com/) environment. 
+
 
 Our virtual machine will have [TI GCC for MSP430s](https://www.ti.com/tool/MSP430-GCC-OPENSOURCE) automatically installed. When you start 
 
