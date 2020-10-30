@@ -43,7 +43,7 @@ that outputs  `main.out`
 - You can write `stop` to stop simulation. 
 - You can write `profile` to see the profiling information of the functions, i.e., how many cycles it took to execute the corresponding functions in the applicaion. 
 - Check [commands](https://github.com/sinanyil81/msp430-vagrant/blob/main/mspsim/scripts/HELP.txt) to see which commands are available for the simulator.
-- Modify `mspsim/scripts/mayfly.sc` file that configures the simulator. 
+- Modify `mspsim/scripts/mayfly.sc` file to configure the simulator. 
 		
 
  
