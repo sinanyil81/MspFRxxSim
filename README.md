@@ -18,31 +18,21 @@ This repo contains a Vagrant virtual machine environment to compile C code for M
 
 ## Building SIREN 
 - In the virtual machine, change directory: `$cd /vagrant`. This directory (in the virtual machine) is shared between your host machine and the virtual machine. It includes the cloned repository. Any change you do in your host machine is accesible in the virtual machine, or vice versa. 
+- Compile SIREN by performing the following steps:
 
+		make
+		make jar
 
-
+## Running the simulator
+On your host machine, you may want to install [Code Composer Studio (CCS) Integrated Development Environment (IDE) 
+CCSTUDIO](https://www.ti.com/tool/CCSTUDIO) that helps you to compile your C application using **TI GCC for MSP430**. You can also install [TI GCC for MSP430s](https://www.ti.com/tool/MSP430-GCC-OPENSOURCE) to compile your C application. After compilation, place the binary file,  e.g., `main.out`, into `mspsim` directory. 
 
 Our virtual machine will have [TI GCC for MSP430s](https://www.ti.com/tool/MSP430-GCC-OPENSOURCE) automatically installed. When you start 
 
-But you may also want to install [Code Composer Studio (CCS) Integrated Development Environment (IDE)
-CCSTUDIO](https://www.ti.com/tool/CCSTUDIO) that helps you to compile your application using **TI GCC for MSP430**.  
+But 
 
-
-
-#### For Linux:
-
-	chmod +x msp430-gcc-full-linux-installer-4.0.1.0.run
-	./msp430-gcc-full-linux-installer-4.0.1.0.run
-	Step through installation, and choose the default path (/home/$USER/ti/gcc)
-
-Usage
------
-- `$ vagrant up` creates the VM for the first time
-- `$ vagrant ssh` lets you log into the VM
-- see `vagrant -h` for info on how to suspend/shutdown/delete/etc the VM.
-- The root folder(which has the Vagrantfile and example code) is accessible as `/vagrant`
-
-### Compiling
+## Sample Programs
+There are sample C programs targeting MSP430FR6989. 
 A simple blink program is included in the repo along with an example `Makefile` with all usual flags set for size and speed. To make sure things work compile the code:
 
 
