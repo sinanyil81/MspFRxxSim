@@ -53,7 +53,7 @@ jarclean:
 	rm -rf $(JARFILE)
 
 run:
-	$(JAVA) $(JAVAARGS) edu.clemson.platform.MayflyNode $(FIRMWAREFILE) $(ARGS) -nogui -exitwhendone -autorun=$(SCRIPTFILE) 
+	$(JAVA) $(JAVAARGS) edu.clemson.platform.SenseAndSendNode $(FIRMWAREFILE) $(ARGS) -nogui -exitwhendone -autorun=$(SCRIPTFILE) 
 
 runekho:
-	$(JAVA) $(JAVAARGS) edu.clemson.platform.MayflyNode $(FIRMWAREFILE) $(ARGS) -nogui -exitwhendone -ekhotracedir=$(EKHOTRACEDIR) -autorun=$(SCRIPTFILE)
+	$(JAVA) $(JAVAARGS) edu.clemson.platform.SenseAndSendNode $(FIRMWAREFILE) $(ARGS) -nogui -exitwhendone -ekhotracedir=$(EKHOTRACEDIR) -autorun=$(SCRIPTFILE)

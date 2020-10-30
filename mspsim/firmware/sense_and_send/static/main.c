@@ -5,7 +5,7 @@
 #include "packet.h"
 #include <stdint.h>
 #include "timekeeper.h"
-#include "mayfly_program.h"
+//#include "mayfly_program.h"
 #include "printf.h"
 
 #define SEND_RATE 1

@@ -52,6 +52,25 @@ public class SenseAndSendNode extends GenericNode implements ADCInput, PortListe
 
 	
 	private TMP20 tempsensor;
+
+	public static void main (String[] args) throws IOException {
+		ArgumentManager config = new ArgumentManager();
+		config.handleArguments(args);
+		SenseAndSendNode node;
+  
+		node = new SenseAndSendNode();
+		node.setupArgs(config);
+		
+		/*System.err.println("You're using Eclipse; click in this console and	" +
+				  "press Q to call System.exit() and run the shutdown routine.");
+		try {
+			int input = System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.exit(0);*/
+	}
 	
 	public SenseAndSendNode () {
 		super("SENSEANDSEND", new MSP430fr6989Config());
