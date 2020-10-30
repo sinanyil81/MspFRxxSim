@@ -16,9 +16,9 @@ This repo contains a Vagrant virtual machine environment to compile C code for M
 - `$ vagrant up` creates the VM for the first time (it might take some time)
 - `$ vagrant ssh` lets you log into the VM
 
-## 
-- 
-- The root folder(which has the Vagrantfile and example code) is accessible as `/vagrant`
+## Building SIREN 
+- In the virtual machine, change directory: `$cd /vagrant`. This directory (in the virtual machine) is shared between your host machine and the virtual machine. It includes the cloned repository. Any change you do in your host machine is accesible in the virtual machine, or vice versa. 
+
 
 
 
