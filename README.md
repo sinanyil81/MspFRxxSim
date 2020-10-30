@@ -1,4 +1,4 @@
-# Vagrant Environment for Compiling and Simulating of MSPFRXX
+# Vagrant Environment for Compiling and Simulating MSPFRXX Code
 
 This repo contains a Vagrant virtual machine environment to compile C code for MSP430 target. The virtual machine comes with:
 - [TI GCC 9.2.0.0 for MSP430](http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/9_2_0_0/export/msp430-gcc-full-linux-x64-installer-9.2.0.0.run)
