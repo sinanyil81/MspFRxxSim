@@ -12,7 +12,8 @@ This repo contains a Vagrant virtual machine environment to compile C code for M
 		git clone https://github.com/sinanyil81/mspsim-vagrant.git
 
 ## Running the virtual machine
-- `$ vagrant up` creates the VM for the first time
+- After clomning this repository, change your directory: `$ cd mspsim-vagrant`
+- `$ vagrant up` creates the VM for the first time (it might take some time)
 - `$ vagrant ssh` lets you log into the VM
 - see `vagrant -h` for info on how to suspend/shutdown/delete/etc the VM.
 - The root folder(which has the Vagrantfile and example code) is accessible as `/vagrant`
