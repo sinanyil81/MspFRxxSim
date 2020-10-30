@@ -16,7 +16,7 @@ This repo contains a Vagrant virtual machine environment to compile C code for M
 - `$ vagrant up` creates the VM for the first time (it might take some time)
 - `$ vagrant ssh` lets you log into the VM
 
-## Building SIREN 
+## Building SIREN Instruction Level Simulator
 - In the virtual machine, change directory: `$cd /vagrant`. This directory (in the virtual machine) is shared between your host machine and the virtual machine. It includes the cloned repository. Any change you do in your host machine is accesible in the virtual machine, or vice versa. 
 - Compile SIREN by performing the following steps:
 		
@@ -42,6 +42,8 @@ that outputs  `main.out`
 		$ make run FIRMWAREFILE=firmware/sense_and_send/main.out
 - You can write `stop` to stop simulation. 
 - You can write `profile` to see the profiling information of the functions, i.e., how many cycles it took to execute the corresponding functions in the applicaion. 
+- Check [commands](https://github.com/sinanyil81/msp430-vagrant/blob/main/mspsim/scripts/HELP.txt) to see which commands are available for the simulator.
+- Modify `mspsim/scripts/mayfly.sc` file that configures the simulator. 
 		
 
  
