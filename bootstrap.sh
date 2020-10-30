@@ -11,9 +11,12 @@ chmod +x installer
 ./installer --mode unattended --prefix $TI_MSPGCC_DIR
 
 echo "export PATH=$TI_MSPGCC_DIR/bin:$PATH" >> /etc/profile
-echo "MSPGCC_ROOT=$TI_MSPGCC_DIR" >> /etc/profile
+echo "export MSPGCC_ROOT=$TI_MSPGCC_DIR" >> /etc/profile
+echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TI_MSPGCC_DIR/bin" >> /etc/profile
+$TI_MSPGCC_DIR/install_scripts/msp430uif_install.sh
+ln -s $TI_MSPGCC_DIR/bin/libmsp430.so /usr/lib/
 
 sudo apt-get -y update
 sudo apt-get -y install default-jdk
 sudo apt-get -y install default-jre
-
+sudo apt-get -y install mspdebug

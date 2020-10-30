@@ -13,7 +13,7 @@ OBJECTS 	=  main.o ../lib/printf.o
 
 CC          	= msp430-elf-gcc
 DEVICE  	= msp430fr6989
-GDB     	= $(MSPGCC_ROOT)/msp430-elf-gdb
+GDB     	= msp430-elf-gdb
 
 # GCC flags
 CSTD_FLAGS 		= -std=gnu11 -funsigned-char
